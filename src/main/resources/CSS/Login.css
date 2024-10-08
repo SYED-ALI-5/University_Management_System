@@ -1,0 +1,36 @@
+.fx-button:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+.fx-button {
+    /*-jfx-toggle-color: transparent;*/
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 0px;
+    -fx-border-radius: 0px;
+    -fx-tooltip-visible: 0px;
+    -fx-background-insets: 0;
+    /*-fx-padding: 2px;*/
+    -fx-background-radius: 0;
+}
+.TextField{
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-radius: 0px;
+    -fx-background-color: transparent;
+    -fx-border-color: #000000;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+ }
+.aBtn{
+    -fx-border-width: 0px;
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-background-color: rgba(37, 108, 250, 0.97);
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 4, 0, 0, 1);
+}
+.aBtn:hover{
+    -fx-background-color: #82b785;
+
+}

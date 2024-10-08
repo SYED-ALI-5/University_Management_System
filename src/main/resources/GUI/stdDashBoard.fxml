@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.StdController">
+   <children>
+      <VBox prefHeight="900.0" prefWidth="252.0">
+         <children>
+            <AnchorPane prefHeight="900.0" prefWidth="213.0" styleClass="menuBar" stylesheets="@../CSS/dashBoard.css">
+               <children>
+                  <JFXButton fx:id="btnProfile" layoutX="22.0" layoutY="376.0" onAction="#handleMenuButton" prefHeight="53.0" prefWidth="200.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Profile">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnProgress" layoutX="22.0" layoutY="443.0" onAction="#handleMenuButton" prefHeight="53.0" prefWidth="200.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Progress">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/book-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="25.0" layoutY="833.0" onAction="#LogOut" prefHeight="53.0" prefWidth="195.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/logout-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" layoutX="23.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="900.0" prefWidth="1051.0" styleClass="body" stylesheets="@../CSS/dashBoard.css">
+         <children>
+            <JFXButton fx:id="btnClose" layoutX="1003.0" minWidth="53.0" onAction="#CloseButton" prefHeight="40.0" prefWidth="53.0" styleClass="closeButton" stylesheets="@../CSS/JfxButtons.css">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-close-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnMin" layoutX="950.0" minWidth="53.0" onAction="#MinButton" prefHeight="40.0" prefWidth="50.0" styleClass="minButton" stylesheets="@../CSS/JfxButtons.css">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-minus-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Text layoutX="39.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Portal">
+               <font>
+                  <Font name="Ebrima Bold" size="50.0" />
+               </font>
+            </Text>
+            <Line endX="905.0" endY="0.1581878662109375" layoutX="131.0" layoutY="101.0" startX="-89.0" startY="0.1581878662109375" strokeWidth="5.0" />
+            <AnchorPane fx:id="profilePane" layoutY="113.0" prefHeight="787.0" prefWidth="1056.0" visible="false">
+               <children>
+                  <JFXTextArea fx:id="profile" layoutX="41.0" layoutY="13.0" prefHeight="761.0" prefWidth="1001.0" styleClass="text-area" stylesheets="@../CSS/dashBoard.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="progressPane" layoutY="113.0" prefHeight="787.0" prefWidth="1056.0">
+               <children>
+                  <Text layoutX="39.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Courses:" wrappingWidth="227.9339599609375">
+                     <font>
+                        <Font name="MS Outlook" size="30.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tableView" layoutX="35.0" layoutY="149.0" prefHeight="436.0" prefWidth="977.0" stylesheets="@../CSS/dashBoard.css">
+                     <columns>
+                        <TableColumn fx:id="tbvCID" prefWidth="245.0" text="Course ID" />
+                        <TableColumn fx:id="tbvTitle" prefWidth="324.0" text="Tirle" />
+                        <TableColumn fx:id="tbvCh" prefWidth="207.0" text="Credit Hours" />
+                        <TableColumn fx:id="tbvMarks" prefWidth="200.0" text="Marks" />
+                     </columns>
+                  </TableView>
+                  <Label fx:id="obtainedMarks" layoutX="213.0" layoutY="633.0" prefHeight="35.0" prefWidth="40.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="totalCourses" layoutX="268.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="227.9339599609375">
+                     <font>
+                        <Font name="MS Outlook" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester:" wrappingWidth="140.0">
+                     <font>
+                        <Font name="MS Outlook" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="semester" layoutX="268.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="227.9339599609375">
+                     <font>
+                        <Font name="MS Outlook" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="35.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses:" wrappingWidth="236.0">
+                     <font>
+                        <Font name="MS Outlook" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

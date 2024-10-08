@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Creepster';
+    src: url('../Fonts/Creepster-Regular.ttf');
+}@font-face {
+    font-family: 'Caveat';
+    src: url('../Fonts/Caveat-VariableFont_wght.ttf');
+}@font-face {
+    font-family: 'Akaya Kanadaka';
+    src: url('../Fonts/AkayaKanadaka-Regular.ttf');
+}
+
+#titleText{
+    -fx-font-family: 'Creepster', sans-serif;}
+.middelText{
+    -fx-font-family: 'Caveat', sans-serif;
+}
+.nameText{
+    -fx-font-family: 'Akaya Kanadaka', sans-serif;
+}
+#progressBar{
+    -fx-accent : black;
+}

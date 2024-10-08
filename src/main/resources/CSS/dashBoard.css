@@ -1,0 +1,58 @@
+.menuBar{
+    -fx-border-width: 5px 5px 5px 0px;
+    /*-fx-border-radius: 0px 10px 10px 0px;*/
+    /*-fx-background-radius: 0px 20px 20px 0px;*/
+    /*-fx-background-color: linear-gradient(to left, #87ade1, #383f65);*/
+    -fx-background-color: #383f65;
+}
+.body{
+    /*-fx-background-color: linear-gradient(to right, #87ade1, #383f65);*/
+    /*-fx-background-color: linear-gradient(to right, #556498,#383f65);*/
+    -fx-background-color: #87ade1;
+}
+.admissionPane{
+    /*-fx-text-fill: none;*/
+    /*-fx-background-color: #87ade1;*/
+    -fx-background-radius: 30px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 25px;
+    -fx-border-color: black;
+    -fx-background-color: #5a7dc2;
+}
+.admissionPane:hover{
+    -fx-background-color: #3565c4;
+    -fx-effect: dropshadow(gaussian, rgba(41, 128, 185, 1.0), 15, 0, 0, 0);
+    -fx-cursor: hand;
+}
+.text-area{
+    -fx-font-family: "Lucida Sans";
+    -fx-font-size: 30px;
+    -fx-padding: 10px 20px 10px 20px;
+}
+.table-view{
+    -fx-background-color:transparent;
+    -fx-padding:0px;
+    -fx-border-color: #3565c4;
+    -fx-border-width:3px;
+    /*trbl*/
+}.table-view .table-column{
+     -fx-alignment: CENTER;
+ }
+.table-view .column-header-background{
+    -fx-background-color: #3565c4;
+    -fx-background-inset: 0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-font-family:"MS Outlook";
+}.text-field{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: black;
+    -fx-font-size: 25px;
+    -fx-padding: 0px;
+ }

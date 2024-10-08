@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="983.0" styleClass="dContainer" stylesheets="@../CSS/Forms.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.DepartmentForms">
+   <children>
+      <Pane layoutX="25.0" layoutY="207.0" prefHeight="385.0" prefWidth="945.0" styleClass="border" stylesheets="@../CSS/Forms.css" />
+      <Pane prefHeight="88.0" prefWidth="983.0" styleClass="dHeader" stylesheets="@../CSS/Forms.css">
+         <children>
+            <Label layoutX="215.0" layoutY="17.0" text="Update Department Info">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="43.0" layoutY="229.0" prefHeight="63.0" prefWidth="245.0" text="Department name:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updatedName" layoutX="317.0" layoutY="232.0" prefHeight="57.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="43.0" layoutY="506.0" prefHeight="63.0" prefWidth="245.0" text="Department ID:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updatedDepID" layoutX="317.0" layoutY="520.0" prefHeight="57.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="43.0" layoutY="304.0" prefHeight="63.0" prefWidth="266.0" text="HOD:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updatedHOD" layoutX="317.0" layoutY="307.0" prefHeight="57.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="updateBtn" layoutX="19.0" layoutY="606.0" onAction="#updateInfo" prefHeight="63.0" prefWidth="945.0" styleClass="dSubmitBtn" stylesheets="@../CSS/JfxButtons.css" text="Update" />
+      <Label layoutX="43.0" layoutY="443.0" prefHeight="63.0" prefWidth="245.0" text="Fee:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updatedFee" layoutX="317.0" layoutY="446.0" prefHeight="57.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="43.0" layoutY="374.0" prefHeight="63.0" prefWidth="191.0" text="DCO:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updatedDCO" layoutX="317.0" layoutY="377.0" prefHeight="57.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="searchUpdatedDID" layoutX="25.0" layoutY="99.0" prefHeight="57.0" prefWidth="945.0" promptText="Enter Department ID to search" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Text fx:id="updatedPromptMsg" fill="#c92121" layoutX="25.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="945.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="924.0" layoutY="111.0" onMouseClicked="#updateSearch" pickOnBounds="true" preserveRatio="true" styleClass="searchIcon">
+         <image>
+            <Image url="@../Images/search-icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

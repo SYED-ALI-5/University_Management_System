@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="723.0" prefWidth="800.0" styleClass="uContainer" stylesheets="@../CSS/Forms.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.UniForms">
+   <children>
+      <Label layoutX="31.0" layoutY="37.0" text="Select Semester Level">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="31.0" layoutY="651.0" onAction="#addCourse" prefHeight="58.0" prefWidth="738.0" styleClass="staffSubmitBtn" stylesheets="@../CSS/JfxButtons.css" text="Add" />
+      <ChoiceBox fx:id="selectLevel" layoutX="31.0" layoutY="82.0" prefHeight="0.0" prefWidth="738.0" styleClass="text-field" stylesheets="@../CSS/Forms.css" />
+      <ListView fx:id="courseList" layoutX="31.0" layoutY="162.0" prefHeight="286.0" prefWidth="738.0" />
+      <Label layoutX="33.0" layoutY="534.0" text="Select Course to add:">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="selectNewCourse" layoutX="31.0" layoutY="579.0" prefHeight="0.0" prefWidth="738.0" styleClass="text-field" stylesheets="@../CSS/Forms.css" />
+      <JFXButton layoutX="31.0" layoutY="467.0" onAction="#removeSelected" prefHeight="58.0" prefWidth="738.0" styleClass="staffSubmitBtn" stylesheets="@../CSS/JfxButtons.css" text="Remove selected course" />
+   </children>
+</Pane>

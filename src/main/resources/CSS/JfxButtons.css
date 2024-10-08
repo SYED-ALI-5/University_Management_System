@@ -1,0 +1,128 @@
+.infoButton {
+    -fx-background-color: #87ade1;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.8), 10, 0, 0, 0);
+    -fx-transition: all 0.3s;
+    -fx-font-size: 25px;
+    -fx-font-family: "Tempus Sans ITC";
+}
+.infoButton:hover {
+    -fx-background-color: #3565c4;
+    -fx-effect: dropshadow(gaussian, rgba(41, 128, 185, 1.0), 15, 0, 0, 0);
+    -fx-cursor: hand;
+}
+.closeButton, .minButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: none;
+}
+.closeButton:hover{
+    -fx-background-color: #d52c2c;
+}
+.minButton:hover{
+    -fx-background-color: #969090;
+}
+.menuButton{
+    -fx-background-radius: 30px;
+    -fx-background-color: #87ade1;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.8), 10, 0, 0, 0);
+    /*-fx-background-color: #001536;*/
+    -fx-font-size: 25px;
+    -fx-font-family: "Tempus Sans ITC";
+}
+.menuButton:hover{
+    -fx-background-color: #3565c4;
+    -fx-effect: dropshadow(gaussian, rgba(41, 128, 185, 1.0), 15, 0, 0, 0);
+    -fx-cursor: hand;
+}
+#update-info{
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3535f8;
+}
+#update-info:hover{
+    -fx-text-fill: #0101bd;
+    -fx-cursor: hand;
+}
+.SubmitBtn{
+    -fx-background-color: #448d44;
+    -fx-background-radius: 20px;
+    -fx-font-size: 30px;
+    -fx-font-family: "Times New Roman";
+}
+.SubmitBtn:hover{
+    -fx-background-color: #2f622f;
+    -fx-effect: dropshadow(gaussian, rgb(6, 91, 6), 15, 0, 0, 0);
+    -fx-cursor: hand;
+}
+.insertButton{
+    /*-fx-text-fill: rgba(37, 108, 250, 0.97);*/
+}
+.insertButton:hover{
+    -fx-cursor: hand;
+}
+.FSubmitBtn{
+    -fx-background-color: #881688;
+    -fx-background-radius: 20px;
+    -fx-font-size: 30px;
+    -fx-font-family: "Times New Roman";
+}
+.FSubmitBtn:hover{
+    -fx-background-color: #7c0c7c;
+    -fx-effect: dropshadow(gaussian, rgb(108, 40, 124), 15, 0, 0, 0);
+    -fx-cursor: hand;
+}.staffSubmitBtn{
+    -fx-background-color: #6058e5;
+    -fx-background-radius: 20px;
+    -fx-font-size: 30px;
+    -fx-font-family: "Times New Roman";
+}
+.staffSubmitBtn:hover{
+    -fx-background-color: #6058e5;
+    -fx-effect: dropshadow(gaussian, rgb(53, 53, 236), 15, 0, 0, 0);
+    -fx-cursor: hand;
+}.dSubmitBtn{
+    -fx-background-color: #7e7878;
+    -fx-background-radius: 20px;
+    -fx-font-size: 30px;
+    -fx-font-family: "Times New Roman";
+}
+.dSubmitBtn:hover{
+    -fx-background-color: #7e7878;
+    -fx-effect: dropshadow(gaussian, #777373, 15, 0, 0, 0);
+    -fx-cursor: hand;
+}.cSubmitBtn{
+    -fx-background-color: #f67132;
+    -fx-background-radius: 20px;
+    -fx-font-size: 30px;
+    -fx-font-family: "Times New Roman";
+}
+.cSubmitBtn:hover{
+    -fx-background-color:#f67132;
+    -fx-effect: dropshadow(gaussian, #f56521, 15, 0, 0, 0);
+    -fx-cursor: hand;
+}.aSubmitBtn{
+    -fx-background-color: #969595;
+    -fx-background-radius: 20px;
+    -fx-font-size: 30px;
+    -fx-font-family: "Times New Roman";
+}
+.aSubmitBtn:hover{
+    -fx-background-color: #7e7d7d;
+    -fx-effect: dropshadow(gaussian, #807d7d, 15, 0, 0, 0);
+    -fx-cursor: hand;
+}
+.otherBtn {
+    -fx-background-radius: 30px;
+    -fx-background-color: #3565c4;
+    /*-fx-effect: dropshadow(gaussian, rgba(109, 163, 253, 0.97), 10, 0, 0, 0);*/
+    -fx-font-size: 25px;
+    -fx-font-family: "Tempus Sans ITC";
+}
+.otherBtn:hover{
+    -fx-background-color: #0646c5;
+    -fx-effect: dropshadow(gaussian, rgba(139, 176, 248, 0.97), 15, 0, 0, 0);
+    -fx-cursor: hand;
+}

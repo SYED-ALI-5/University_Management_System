@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87ade1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="FormControllers.AddStudent">
+   <children>
+      <Text layoutX="204.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us">
+         <font>
+            <Font name="Bradley Hand ITC" size="50.0" />
+         </font>
+      </Text>
+      <Text layoutX="119.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Muhammad Hamza Tahir&#10;Syed Ahmad Ali" textAlignment="CENTER">
+         <font>
+            <Font name="Bradley Hand ITC" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="216.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created and powered by">
+         <font>
+            <Font name="Blackadder ITC" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="204.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created for" textAlignment="CENTER" wrappingWidth="218.212890625">
+         <font>
+            <Font name="Blackadder ITC" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="162.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester Porject&#10;OOP&#10;Dr Aksam Iftikhar" textAlignment="CENTER">
+         <font>
+            <Font name="Bradley Hand ITC" size="35.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

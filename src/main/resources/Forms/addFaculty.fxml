@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1100.0" styleClass="fContainer" stylesheets="@../CSS/Forms.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.HireFaculty">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="88.0" prefWidth="1110.0" styleClass="fHeader" stylesheets="@../CSS/Forms.css">
+         <children>
+            <Label layoutX="372.0" layoutY="16.0" text="Hier Faculty">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="25.0" layoutY="116.0" prefHeight="63.0" prefWidth="191.0" text="Name:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="230.0" layoutY="119.0" prefHeight="57.0" prefWidth="571.0" promptText="Enter full name" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="698.0" layoutY="635.0" prefHeight="63.0" prefWidth="72.0" text="Age:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="age" layoutX="790.0" layoutY="638.0" prefHeight="57.0" prefWidth="267.0" promptText="Age in Years" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="25.0" layoutY="495.0" prefHeight="63.0" prefWidth="105.0" text="Gender:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="555.0" prefHeight="63.0" prefWidth="191.0" text="Date of  Birth:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="197.0" prefHeight="63.0" prefWidth="191.0" text="Father Name:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fatherName" layoutX="230.0" layoutY="200.0" prefHeight="57.0" prefWidth="571.0" promptText="Enter Father name" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phoneNumber" layoutX="230.0" layoutY="638.0" prefHeight="57.0" prefWidth="449.0" promptText="Enter phone number" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="DOB" layoutX="230.0" layoutY="558.0" prefHeight="57.0" prefWidth="449.0" promptText="DD/MM/YY" styleClass="datePicker" stylesheets="@../CSS/Forms.css" />
+      <Label layoutX="25.0" layoutY="635.0" prefHeight="63.0" prefWidth="191.0" text="Phone Number:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="721.0" prefHeight="63.0" prefWidth="191.0" text="Department:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="submitBtn" layoutX="21.0" layoutY="831.0" onAction="#submitInfo" prefHeight="63.0" prefWidth="1061.0" styleClass="FSubmitBtn" stylesheets="@../CSS/JfxButtons.css" text="Submit" />
+      <Text fx:id="promptMsg" fill="#c92121" layoutX="18.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1061.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Pane layoutX="853.0" layoutY="116.0" prefHeight="200.0" prefWidth="200.0" styleClass="imgView" stylesheets="@../CSS/Forms.css">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton layoutY="174.0" onAction="#insertImage" prefHeight="25.0" prefWidth="200.0" styleClass="insertButton" stylesheets="@../CSS/JfxButtons.css" text="Insert Image" />
+         </children>
+      </Pane>
+      <Label layoutX="25.0" layoutY="367.0" prefHeight="40.0" prefWidth="191.0" text="Adress:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="address" layoutX="230.0" layoutY="359.0" prefHeight="57.0" prefWidth="827.0" promptText="Enter full Adress" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="25.0" layoutY="272.0" prefHeight="63.0" prefWidth="191.0" text="CNIC:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CNIC" layoutX="230.0" layoutY="275.0" prefHeight="57.0" prefWidth="571.0" promptText="Enter CNIC" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="rMaleBtn" layoutX="256.0" layoutY="513.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="51.0" scaleX="2.0" scaleY="2.0" text="Male" />
+      <RadioButton fx:id="rFemaleBtn" layoutX="377.0" layoutY="518.0" mnemonicParsing="false" scaleX="2.0" scaleY="2.0" text="Female" />
+      <ComboBox fx:id="department" layoutX="230.0" layoutY="723.0" prefHeight="58.0" prefWidth="449.0" promptText="---Select Department---" styleClass="text-field" stylesheets="@../CSS/Forms.css" />
+      <TextField fx:id="specialization" layoutX="230.0" layoutY="434.0" prefHeight="57.0" prefWidth="827.0" promptText="Enter specialization and education" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="25.0" layoutY="443.0" prefHeight="40.0" prefWidth="191.0" text="Specialization:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="scale" layoutX="790.0" layoutY="723.0" prefHeight="58.0" prefWidth="267.0" promptText="---Scale---" styleClass="text-field" stylesheets="@../CSS/Forms.css" />
+      <Label layoutX="698.0" layoutY="721.0" prefHeight="63.0" prefWidth="81.0" text="Scale:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="698.0" layoutY="555.0" prefHeight="63.0" prefWidth="72.0" text="Type:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="type" layoutX="790.0" layoutY="558.0" prefHeight="58.0" prefWidth="267.0" promptText="---Type---" styleClass="text-field" stylesheets="@../CSS/Forms.css" />
+   </children>
+</AnchorPane>

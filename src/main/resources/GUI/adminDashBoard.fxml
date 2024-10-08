@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdminController">
+   <children>
+      <VBox prefHeight="900.0" prefWidth="300.0">
+         <children>
+            <AnchorPane prefHeight="900.0" prefWidth="300.0" styleClass="menuBar" stylesheets="@../CSS/dashBoard.css">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="14.0" onAction="#OnAboutClicked" prefHeight="140.0" prefWidth="250.0" styleClass="infoButton" stylesheets="@../CSS/JfxButtons.css" text="About Us">
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/about-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnHome" layoutX="15.0" layoutY="260.0" onAction="#handleMenuButton" prefHeight="50.0" prefWidth="250.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Home          ">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnStudents" layoutX="15.0" layoutY="320.0" onAction="#handleMenuButton" prefHeight="50.0" prefWidth="250.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Students       ">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/book-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnFaculty" layoutX="15.0" layoutY="380.0" onAction="#handleMenuButton" prefHeight="50.0" prefWidth="250.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Faculty          ">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/teacher-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnStaff" layoutX="15.0" layoutY="440.0" onAction="#handleMenuButton" prefHeight="50.0" prefWidth="250.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Staff              ">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/staff-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDepartment" layoutX="15.0" layoutY="500.0" onAction="#handleMenuButton" prefHeight="50.0" prefWidth="250.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Departments">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/department-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCourses" layoutX="15.0" layoutY="560.0" onAction="#handleMenuButton" prefHeight="50.0" prefWidth="250.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Courses        ">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/examination-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="15.0" layoutY="840.0" onAction="#LogOut" prefHeight="50.0" prefWidth="250.0" styleClass="menuButton" stylesheets="@../CSS/JfxButtons.css" text="Logout">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/logout-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Pane prefHeight="900.0" prefWidth="1300.0" styleClass="body" stylesheets="@../CSS/dashBoard.css">
+         <children>
+            <Text layoutX="57.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Portal">
+               <font>
+                  <Font name="Ebrima Bold" size="50.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnClose" layoutX="1250.0" minWidth="53.0" onAction="#CloseButton" prefHeight="40.0" prefWidth="53.0" styleClass="closeButton" stylesheets="@../CSS/JfxButtons.css">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-close-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnMin" layoutX="1195.0" minWidth="53.0" onAction="#MinButton" prefHeight="40.0" prefWidth="50.0" styleClass="minButton" stylesheets="@../CSS/JfxButtons.css">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-minus-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Line endX="1058.8629150390625" endY="0.15818023681640625" layoutX="171.0" layoutY="105.0" startX="-110.0" startY="0.1581878662109375" strokeWidth="5.0" />
+            <Pane fx:id="homePane" layoutX="1.0" layoutY="111.0" prefHeight="790.0" prefWidth="1300.0">
+               <children>
+                  <Text layoutX="62.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students:">
+                     <font>
+                        <Font name="Lucida Sans Demibold Italic" size="35.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Students enrolled:" wrappingWidth="408.45056804562614">
+                     <font>
+                        <Font name="Lucida Bright" size="32.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="60.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University Name" wrappingWidth="865.9339599609375">
+                     <font>
+                        <Font name="MS Outlook" size="50.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty:">
+                     <font>
+                        <Font name="Lucida Sans Demibold Italic" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Teachers Hired:" wrappingWidth="374.45056804562614">
+                     <font>
+                        <Font name="Lucida Bright" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="1175.9339599609375">
+                     <font>
+                        <Font name="MS Outlook" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff:">
+                     <font>
+                        <Font name="Lucida Sans Demibold Italic" size="35.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Staff members:" wrappingWidth="382.45056804562614">
+                     <font>
+                        <Font name="Lucida Bright" size="32.0" />
+                     </font>
+                  </Text>
+                  <PieChart layoutX="1038.0" layoutY="221.0" prefHeight="137.0" prefWidth="200.0" />
+                  <Text fx:id="tStd" layoutX="495.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="tFac" layoutX="495.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="tStaff" layoutX="495.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="studentPane" layoutX="1.0" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1300.0" stylesheets="@../CSS/dashBoard.css" visible="false">
+               <children>
+                  <Pane layoutX="58.0" layoutY="115.0" onMouseClicked="#addNewStudent" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="292.0" fitWidth="291.0" layoutX="35.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/admission-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="35.0" layoutY="390.0" text="Create new Admission">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="440.0" text="You can add new students by&#10;filling up the addmission form.&#10;&#10;Click to view admission form.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="475.0" layoutY="115.0" onMouseClicked="#updateStudentInfo" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="298.0" fitWidth="291.0" layoutX="35.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/update-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="35.0" layoutY="390.0" text="Update Student Info">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="440.0" text="You can update students by&#10;using student ID.&#10;&#10;Click to view update form.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="890.0" layoutY="115.0" onMouseClicked="#removeStudent" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="292.0" fitWidth="291.0" layoutX="35.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/remove-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="73.0" layoutY="390.0" text="Suspend/Remove">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="73.0" layoutY="440.0" text="You can remove or suspend &#10;a student.&#10;&#10;Click here.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="58.0" layoutY="30.0" text="Student Management">
+                     <font>
+                        <Font name="Berlin Sans FB" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="facultyPane" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1300.0" stylesheets="@../CSS/dashBoard.css" visible="false">
+               <children>
+                  <Pane layoutX="58.0" layoutY="115.0" onMouseClicked="#addFaculty" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="292.0" fitWidth="291.0" layoutX="35.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/hiring-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="35.0" layoutY="390.0" text="Hier New Faculty">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="440.0" text="You can add new Faculty by&#10;filling up the form.&#10;&#10;Click to view form.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="475.0" layoutY="115.0" onMouseClicked="#updateFaculty" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="298.0" fitWidth="291.0" layoutX="35.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/updateF-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="35.0" layoutY="390.0" text="Update Faculty Info">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="440.0" prefHeight="88.0" prefWidth="249.0" text="You can update faculty by&#10;using Faculty ID.&#10;&#10;Click to view update form.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="890.0" layoutY="115.0" onMouseClicked="#removeFaculty" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="292.0" fitWidth="291.0" layoutX="35.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/removeF-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="73.0" layoutY="390.0" text="Suspend/Remove">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="73.0" layoutY="440.0" text="You can remove or suspend &#10;a Faculty member.&#10;&#10;Click here.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="58.0" layoutY="30.0" text="Faculty Management">
+                     <font>
+                        <Font name="Berlin Sans FB" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="staffPane" layoutX="1.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1300.0" stylesheets="@../CSS/dashBoard.css" visible="false">
+               <children>
+                  <Pane layoutX="58.0" layoutY="115.0" onMouseClicked="#addNewStaff" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="292.0" fitWidth="291.0" layoutX="35.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/hiringS-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="35.0" layoutY="390.0" text="Hier New Staff">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="440.0" text="You can add new Staff by filling up&#10;the form.&#10;&#10;Click to view form.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="475.0" layoutY="115.0" onMouseClicked="#updateStaff" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="298.0" fitWidth="291.0" layoutX="35.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/updateS-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="35.0" layoutY="390.0" text="Update Staff Info">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="440.0" text="You can update Staff by using &#10;Staff ID.&#10;&#10;Click to view update form.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="890.0" layoutY="115.0" onMouseClicked="#removeStaff" prefHeight="600.0" prefWidth="360.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <ImageView fitHeight="292.0" fitWidth="291.0" layoutX="35.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/removeS-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="73.0" layoutY="390.0" text="Suspend/Remove">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="73.0" layoutY="440.0" text="You can remove or suspend &#10;a Staff.&#10;&#10;Click here.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="58.0" layoutY="30.0" text="Staff Management">
+                     <font>
+                        <Font name="Berlin Sans FB" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="departmentPane" layoutX="1.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1300.0" stylesheets="@../CSS/dashBoard.css" visible="false">
+               <children>
+                  <Pane layoutX="58.0" layoutY="150.0" onMouseClicked="#addDepartment" prefHeight="255.0" prefWidth="341.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="26.0" text="Create new Department">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="132.0" text="You can add new Department by&#10;filling up the form.&#10;&#10;Click to view form.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="58.0" layoutY="30.0" text="Department Management">
+                     <font>
+                        <Font name="Berlin Sans FB" size="50.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="58.0" layoutY="471.0" onMouseClicked="#updateDepartment" prefHeight="255.0" prefWidth="1210.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <Label layoutX="308.0" layoutY="107.0" text="Update Department Info">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="705.0" layoutY="102.0" text="You can add courses to a department,,&#10;change name, and many more">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="235.0" fitWidth="225.0" layoutX="23.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/departmentU-icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="303.0" fitWidth="324.0" layoutX="918.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/departmentA-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="459.0" layoutY="150.0" onMouseClicked="#removeDepartment" prefHeight="255.0" prefWidth="341.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="26.0" text="Remove a Department">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="132.0" text="You can remove Departmen.&#10;&#10;&#10;Click here.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="coursesPane" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1300.0" stylesheets="@../CSS/dashBoard.css" visible="false">
+               <children>
+                  <Pane layoutX="58.0" layoutY="150.0" onMouseClicked="#addCourse" prefHeight="255.0" prefWidth="341.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="26.0" text="Add a new course">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="132.0" text="You can add new course by filling&#10;up the form.&#10;&#10;Click to view form.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="58.0" layoutY="30.0" text="Courses Management">
+                     <font>
+                        <Font name="Berlin Sans FB" size="50.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="58.0" layoutY="471.0" onMouseClicked="#updateCourse" prefHeight="255.0" prefWidth="1210.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <Label layoutX="308.0" layoutY="107.0" text="Update course Info">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="705.0" layoutY="102.0" text="You can change course title, course ID, and&#10;depaertment by clicking here.">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="235.0" fitWidth="225.0" layoutX="23.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/updatecourses-icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="303.0" fitWidth="324.0" layoutX="918.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/CoursesM-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="459.0" layoutY="150.0" onMouseClicked="#removeCourse" prefHeight="255.0" prefWidth="341.0" styleClass="admissionPane" stylesheets="@../CSS/dashBoard.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="26.0" text="Remove a course">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="132.0" text="You can remove course.&#10;&#10;&#10;Click here.&#10;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>

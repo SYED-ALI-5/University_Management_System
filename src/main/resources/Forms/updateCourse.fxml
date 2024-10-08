@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="983.0" styleClass="cContainer" stylesheets="@../CSS/Forms.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.UpdateCourse">
+   <children>
+      <Pane layoutX="25.0" layoutY="207.0" prefHeight="379.0" prefWidth="930.0" styleClass="border" stylesheets="@../CSS/Forms.css" />
+      <Pane prefHeight="88.0" prefWidth="983.0" styleClass="cHeader" stylesheets="@../CSS/Forms.css">
+         <children>
+            <Label layoutX="284.0" layoutY="16.0" text="Update Course Info">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="72.0" layoutY="219.0" prefHeight="63.0" prefWidth="245.0" text="Course Title:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="title" layoutX="317.0" layoutY="222.0" prefHeight="57.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="65.0" layoutY="435.0" prefHeight="63.0" prefWidth="245.0" text="Course Department:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="289.0" prefHeight="63.0" prefWidth="245.0" text="Credit Hours:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="18.0" layoutY="613.0" onAction="#updateInfo" prefHeight="63.0" prefWidth="945.0" styleClass="cSubmitBtn" stylesheets="@../CSS/JfxButtons.css" text="Update" />
+      <Label layoutX="72.0" layoutY="363.0" prefHeight="63.0" prefWidth="191.0" text="Course ID:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ID" layoutX="317.0" layoutY="366.0" prefHeight="57.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="search" layoutX="25.0" layoutY="99.0" prefHeight="57.0" prefWidth="930.0" promptText="Enter Course ID to search" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Text fx:id="searchPrompt" fill="#c92121" layoutX="25.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="930.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="912.0" layoutY="111.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true" styleClass="searchIcon">
+         <image>
+            <Image url="@../Images/search-icon.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="department" layoutX="317.0" layoutY="438.0" prefHeight="58.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css" />
+      <Label layoutX="72.0" layoutY="507.0" prefHeight="63.0" prefWidth="245.0" text="Course Level:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="level" layoutX="317.0" layoutY="509.0" prefHeight="58.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css" />
+      <Text fx:id="savePrompt" fill="#c92121" layoutX="18.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="945.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="creditHours" layoutX="317.0" layoutY="294.0" prefHeight="58.0" prefWidth="566.0" styleClass="text-field" stylesheets="@../CSS/Forms.css" />
+   </children>
+</AnchorPane>

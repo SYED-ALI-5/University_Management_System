@@ -1,0 +1,80 @@
+.container{
+    -fx-background-color: #d2e8d2;
+    /*-fx-text-fill: white;*/
+    /*-fx-font-family: "Tempus Sans ITC";*/
+    /*-fx-font-size: 30px;*/
+}
+.header{
+    -fx-background-color: #448d44;
+}
+.fHeader{
+   -fx-background-color: #881688;
+}
+.fContainer{
+    -fx-background-color: #eeddee;
+}.staffHeader{
+   -fx-background-color: #6058e5;
+}
+.staffContainer{
+    -fx-background-color: #d8d7fa;
+}.dHeader{
+   -fx-background-color: #7e7878;
+}
+.dContainer{
+    -fx-background-color: #e1dede;
+}.cHeader{
+   -fx-background-color: #f67132;
+}
+.cContainer{
+    -fx-background-color: #f3cfb5;
+}.aHeader{
+   -fx-background-color: #969595;
+}
+.aContainer{
+    -fx-background-color: #d9d7d6;
+}.uContainer{
+    -fx-background-color: #bacaef;
+}
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-padding: 0px 0px 0px 4px;
+    -fx-border-color:#285028;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 30px;
+    -fx-border-radius: 10px;
+    /*-fx-prompt-text-fill: #858484;*/
+}
+.datePicker{
+    -fx-background-color: transparent;
+    -fx-border-color:#285028;
+    -fx-padding: 0px;
+    -fx-border-width: 0px;
+}
+.imgView{
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-border-radius:10px;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.4), 6,0,0,0);
+}
+.stdTextArea{
+    -fx-padding: 10px;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 30px;
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-text-fill: black;
+}
+.searchIcon:hover{
+    -fx-cursor: hand;
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.4), 6,0,0,0);
+}
+.border{
+    -fx-border-radius: 10px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}

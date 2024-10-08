@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="894.0" styleClass="dContainer" stylesheets="@../CSS/Forms.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormControllers.DepartmentForms">
+   <children>
+      <Pane prefHeight="88.0" prefWidth="894.0" styleClass="dHeader" stylesheets="@../CSS/Forms.css">
+         <children>
+            <Label layoutX="184.0" layoutY="16.0" text="Add a new Department">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="25.0" layoutY="116.0" prefHeight="63.0" prefWidth="245.0" text="Department name:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="291.0" layoutY="119.0" prefHeight="57.0" prefWidth="566.0" promptText="Enter Department Name" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="20.0" layoutY="419.0" prefHeight="63.0" prefWidth="245.0" text="Department ID:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="depID" layoutX="291.0" layoutY="422.0" prefHeight="57.0" prefWidth="566.0" promptText="e.g CS/EE" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="25.0" layoutY="194.0" prefHeight="63.0" prefWidth="266.0" text="HOD:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="HOD" layoutX="291.0" layoutY="197.0" prefHeight="57.0" prefWidth="566.0" promptText="Enter Faculty ID of same Department" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="submitBtn" layoutX="19.0" layoutY="537.0" onAction="#submitInfo" prefHeight="63.0" prefWidth="857.0" styleClass="dSubmitBtn" stylesheets="@../CSS/JfxButtons.css" text="Submit" />
+      <Text fx:id="promptMsg" fill="#c92121" layoutX="19.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="857.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label layoutX="20.0" layoutY="347.0" prefHeight="63.0" prefWidth="245.0" text="Fee:">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="272.0" prefHeight="63.0" prefWidth="191.0" text="DCO :">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DCO" layoutX="291.0" layoutY="275.0" prefHeight="57.0" prefWidth="566.0" promptText="Enter Faculty ID of same Department" styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fee" layoutX="291.0" layoutY="350.0" prefHeight="57.0" prefWidth="566.0" promptText="Enter Tution Fee " styleClass="text-field" stylesheets="@../CSS/Forms.css">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
